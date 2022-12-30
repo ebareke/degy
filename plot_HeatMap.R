@@ -29,7 +29,7 @@ log2_fold_changes <- log2(fold_changes)
 # Generate heatmap using ggplot2
 ggplot(data=log2_fold_changes, aes(x=rownames(log2_fold_changes), y=colnames(log2_fold_changes))) +
   geom_tile(aes(fill=value)) +
-  scale_fill_gradient(low='yellow', high='red') +
+  scale_fill_gradient(low='blue', high='red') +
   theme(axis.text.x=element_text(angle=90, hjust=1))
 
 # Convert heatmap to plotly object
