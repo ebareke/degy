@@ -43,10 +43,10 @@ To use the package, you will first need to install it and load it in your R sess
 
 ``` r
 # install the package (if you haven't already)
-install.packages("yourpackage")
+install.packages("deg_tools")
 
 # load the package
-library(yourpackage)
+library(deg_tools)
 ```
 
 ## Documentation
