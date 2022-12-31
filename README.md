@@ -39,9 +39,15 @@ devtools::install_github("ebareke/deg_tools")
 
 ## Usage
 
-```
-library(deg_tools)
-```
+To use the package, you will first need to install it and load it in your R session:
+
+``` r
+# install the package (if you haven't already)
+install.packages("yourpackage")
+
+# load the package
+library(yourpackage)
+
 
 ## Documentation
 
