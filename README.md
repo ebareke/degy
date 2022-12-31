@@ -35,7 +35,7 @@ install.packages("devtools")
 
 # install the package from GitHub
 devtools::install_github("ebareke/deg_tools")
-
+```
 
 ## Usage
 
@@ -47,7 +47,7 @@ install.packages("yourpackage")
 
 # load the package
 library(yourpackage)
-
+```
 
 ## Documentation
 
