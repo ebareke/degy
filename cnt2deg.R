@@ -217,7 +217,6 @@ ggplot(sig_enrichment, aes(x=reorder(term, p.value), y=p.value)) +
 ggsave("deseq2_enrichment.png", width = 6, height = 6)
 
 # Perform enrichment analysis on significantly expressed genes from edgeR using gprofiler2
-library(gprofiler2)
 
 # Convert gene identifiers to ENTREZID
 sig_edger$ENTREZID <- mapIds(org.Mm.egSYMBOL, keys=sig_edger$gene, column=2, keytype="SYMBOL", multiVals="first")
@@ -239,7 +238,6 @@ sig_enrichment <- enrichment[enrichment$adj.p.value < adjp_cutoff,]
 write.table(sig_enrichment, file="edger_enrichment.txt", sep="\t", row.names=FALSE)
 
 # Produce and save summary plots
-library(ggplot2)
 
 # Barplot of enrichment results
 ggplot(sig_enrichment, aes(x=reorder(term, p.value), y=p.value)) +
@@ -250,7 +248,6 @@ ggplot(sig_enrichment, aes(x=reorder(term, p.value), y=p.value)) +
 ggsave("edger_enrichment.png", width = 6, height = 6)
 
 # Perform enrichment analysis on significantly expressed genes from limma+voom using gprofiler2
-library(gprofiler2)
 
 # Convert gene identifiers to ENTREZID
 sig_limma$ENTREZID <- mapIds(org.Mm.egSYMBOL, keys=sig_limma$gene, column=2, keytype="SYMBOL", multiVals="first")
@@ -272,7 +269,6 @@ sig_enrichment <- enrichment[enrichment$adj.p.value < adjp_cutoff,]
 write.table(sig_enrichment, file="limma_enrichment.txt", sep="\t", row.names=FALSE)
 
 # Produce and save summary plots
-library(ggplot2)
 
 # Barplot of enrichment results
 ggplot(sig_enrichment, aes(x=reorder(term, p.value), y=p.value)) +
