@@ -13,7 +13,6 @@ A short description of your project.
 - [Documentation](#documentation)
 - [Support](#support)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -21,33 +20,43 @@ A detailed introduction to your project. This should give the reader an idea of 
 
 ## Features
 
-- Perform Differential Expression analysis.
-- Do Enrichment Analysis and Provide results and plots.
-- Can be easily integrated in dashboard reports or pipelines.
+- Perform Differential Expression analysis using 3 different approaches (DESeq2, edgeR & limma+voom).
+- Do Enrichment Analysis (using gprofiler2 and webgestalt package) and Provide summary results and plots.
+- Can be easily integrated in dashboard reports or pipelines (runnable as a CLI command).
 
 ## Installation
 
-To install the package, you can use the `install_github()` function from the `devtools` package:
+There is no specific installation required to run tools in this rep.
+Just download them and install below packages:
 
 ``` r
-# install devtools if you don't have it already
-install.packages("devtools")
+# install the packages (if you haven't already)
+pkgs1 <- c("gplots", "gprofiler2", "ggplot2")
+install.packages(pkgs1)
 
-# install the package from GitHub
-devtools::install_github("ebareke/deg_tools")
+install.packages("BiocManager")
+pkgs2 <- c("DESeq2", "edgeR", "limma", "voom", "pcaMethods")
+BiocManager::install(pkgs2)
 ```
 
 ## Usage
 
-To use the package, you will first need to install it and load it in your R session:
+E.g. to run cnt2deg.R script, you will need to open a terminal and navigate to the directory where the script is located. Then, you can run the script using the following command:
 
 ``` r
-# install the package (if you haven't already)
-install.packages("deg_tools")
-
-# load the package
-library(deg_tools)
+Rscript cnt2deg.R count_matrix_file sample_metadata_file lfc_cutoff adjp_cutoff
 ```
+
+Replace `count_matrix_file`, `sample_metadata_file`, `lfc_cutoff`, and `adjp_cutoff` with the paths to your count matrix file, sample metadata file, and the desired cutoffs for log fold change and adjusted p-value, respectively.
+
+
+Alternatively, you can also run the above script from within the R console by using the `source()` function. For example:
+
+``` r
+args <- c("count_matrix_file", "sample_metadata_file", "lfc_cutoff", "adjp_cutoff")
+source("script.R", local = list(args = args))
+```
+
 
 ## Documentation
 
@@ -77,29 +86,3 @@ We welcome contributions to this project! If you're interested in contributing, 
 - **Improve documentation**: If you see an opportunity to improve the documentation, please feel free to [open a pull request](https://github.com/ebareke/deg_tools/pulls) with your changes.
 
 We appreciate your help! Please be sure to read our [contribution guidelines](https://github.com/ebareke/deg_tools/blob/master/CONTRIBUTING.md) before submitting your pull request.
-
-
-## License
-
-MIT License
-
-Copyright (c) 2022 Eric Bareke, PhD
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
