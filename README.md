@@ -37,7 +37,7 @@ E.g. to run cnt2deg.R script, you will need to open a terminal and navigate to t
 Rscript DEA.r -f root_folder -c condition_1,condition_2 -r reference_condition -fc fold_change_threshold -p adjusted_pval_threshold -m min_avg_coverage
 ```
 
-# Replace:
+### Replace:
 
 - `root_folder` with a folder containing your count matrix and your sample information (`rawCounts.t*` and `sampleInfo.t*` files), 
 - `condition_1` with a meaningful description of the condition you consider to be one of your conditions to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` file, 
