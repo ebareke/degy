@@ -31,7 +31,7 @@ There is no specific installation required to run tools in this repository.
 
 ## Usage
 
-E.g. to run cnt2deg.R script, you will need to open a terminal and navigate to the directory where the script is located. Then, you can run the script using the following command:
+Make sure your have `R` installed on your system, open a terminal and run the script using the following command:
 
 ``` r
 Rscript DEA.r -f root_folder -c condition_1,condition_2 -r reference_condition -fc fold_change_threshold -p adjusted_pval_threshold -m min_avg_coverage
