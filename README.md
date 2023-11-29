@@ -1,8 +1,8 @@
 # deg_tools
 
-[![GitHub stars](https://img.shields.io/github/stars/ebareke/deg_tools.svg)](https://github.com/ebareke/deg_tools/stargazers) [![GitHub license](https://img.shields.io/github/license/ebareke/deg_tools.svg)](https://github.com/ebareke/deg_tools/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ebareke/deg_tools.svg)](https://github.com/ebareke/degy/stargazers) [![GitHub license](https://img.shields.io/github/license/ebareke/degy.svg)](https://github.com/ebareke/degy/blob/master/LICENSE)
 
-This repository contains a set of ready-to-run R scripts, that automate differential gene expression and enrichment analyses and generate various QC and summary plots. The scripts are be combined or run separated and are easy to integrate into pipelines.
+This repository contains a set of ready-to-run R scripts, that automates differential gene/transcript expression and related enrichment analyses and generates various (ready-to-publish) summary plots. 
 
 ## Table of Contents
 
