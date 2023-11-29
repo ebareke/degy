@@ -1,4 +1,4 @@
-# deg_tools
+# degy 
 
 [![GitHub stars](https://img.shields.io/github/stars/ebareke/deg_tools.svg)](https://github.com/ebareke/degy/stargazers) [![GitHub license](https://img.shields.io/github/license/ebareke/degy.svg)](https://github.com/ebareke/degy/blob/master/LICENSE)
 
@@ -15,9 +15,11 @@ This repository contains a set of ready-to-run R scripts, that automates differe
 
 ## Introduction
 
-A detailed introduction to your project. This should give the reader an idea of what your project is all about and why it is useful.
+A companion sets of R scripts for post-processing RNA-seq analyses.
 
 ## Features
+
+This set allows to:
 
 - Perform Differential Expression analysis using 3 different approaches (DESeq2, edgeR & limma+voom).
 - Do Enrichment Analysis (using gprofiler2 and webgestalt package) and Provide summary results and plots.
@@ -25,8 +27,7 @@ A detailed introduction to your project. This should give the reader an idea of 
 
 ## Installation
 
-There is no specific installation required to run tools in this rep.
-Just download them and start using them.
+There is no specific installation required to run tools in this repository.
 
 ## Usage
 
