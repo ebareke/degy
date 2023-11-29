@@ -66,7 +66,7 @@ We appreciate your help and we will try to respond to all issues and pull reques
 
 MIT License
 
-Copyright (c) 2023 Eric BAREKE (eric.bareke@mcgill.ca), Emma Carlson (emma.carlson@mail.mcgill.ca), and Majewski Lab (McGill University)
+Copyright (c) 2023 Eric BAREKE (PhD), Emma Carlson, and Prof. Majewski Lab (McGill University)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
