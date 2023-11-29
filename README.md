@@ -39,13 +39,13 @@ Rscript DEA.r -f root_folder -c condition_1,condition_2 -r reference_condition -
 
 - Replace:
 
-`root_folder` with a folder containing your count matrix and your sample information (`rawCounts.t*` and `sampleInfo.t*` files), 
-`condition_1` with a meaningful description of the condition you consider to be one of your conditions to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` file, 
-`condition_2`,with a meaningful description of the condition you consider to be one of your conditions to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` file, 
-`reference_condition` with a meaningful description of the condition you consider to be baseline condition to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` and be equal either to `condition_1` or  `condition_2`, 
-`fold_change_threshold` with a desired level of fold change cutoff, 
-`adjusted_pval_threshold` with a desired level of adjusted p value cutoff, and 
-`min_avg_coverage` with a desired minimumn coverage one would need to filter low counts.
+- `root_folder` with a folder containing your count matrix and your sample information (`rawCounts.t*` and `sampleInfo.t*` files), 
+- `condition_1` with a meaningful description of the condition you consider to be one of your conditions to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` file, 
+- `condition_2`,with a meaningful description of the condition you consider to be one of your conditions to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` file, 
+- `reference_condition` with a meaningful description of the condition you consider to be baseline condition to do differential expression analysis and should be a value in the `Condition` column of the `sampleInfo.t*` and be equal either to `condition_1` or  `condition_2`, 
+- `fold_change_threshold` with a desired level of fold change cutoff, 
+- `adjusted_pval_threshold` with a desired level of adjusted p value cutoff, and 
+- `min_avg_coverage` with a desired minimumn coverage one would need to filter low counts.
 
 ## Contributing
 
