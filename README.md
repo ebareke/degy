@@ -51,7 +51,7 @@ Rscript DEA.r -f root_folder -c condition_1,condition_2 -r reference_condition -
 
 We welcome contributions to this project! If you're interested in contributing, here are a few ways you can help:
 
-- **Report bugs**: If you find a bug, please [open an issue](https://github.com/ebareke/deg_tools/issues) and let us know. Be sure to include steps to reproduce the bug, and any error messages or other output that might be relevant.
+- **Report bugs**: If you find a bug, please [open an issue](https://github.com/ebareke/degy/issues) and let us know. Be sure to include steps to reproduce the bug, and any error messages or other output that might be relevant.
 
 - **Fix bugs**: If you have expertise in debugging and want to help fix existing bugs, please feel free to open a pull request with your fix.
 
